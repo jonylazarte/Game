@@ -1,0 +1,243 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+body{
+    margin-top:40px;
+    color:#ffffff;
+    background-image: url("./images/bg.jpg");
+    text-align:center;
+    height:100%;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+
+.charselect{
+    position: relative;
+	width: 92%;
+	margin: 0 auto;
+    display: block;
+    height:auto;
+    overflow:hidden;
+}
+
+.char-btn {
+	position: relative;
+	width: 100%;
+	height: 70px;
+	margin: 10px 0;
+	border: 2px solid #c8b33d;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	background-color: rgba(0,0,0,0.7);
+	background-image: url("http://file.saintseiya-gold.com/20150316/img/frame/button_deco.png");
+	background-position: right top;
+	background-size: 32px;
+	background-repeat: no-repeat;
+    outline:0;
+}
+
+.char-btn a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.char-btn img {
+	height: 70px;
+	border-radius: 8px 0 0 8px;
+	float: left;
+}
+
+.char-name {
+	position: absolute;
+	top: 32px;
+	left: 100px;
+}
+
+.protect {
+    pointer-events: none;
+  user-select: none;
+    -webkit-user-select: none;
+}
+
+.charselected {
+    width: 100%;
+    height: auto;
+    display:flex;
+    padding: 0px 20px 0 20px;
+    box-sizing: border-box;
+}
+.charbox{
+    display:block;
+    height:300px;
+    border: 1px solid #c8b33d;
+    width:33%;
+    margin:0px 10px;
+    background: url("./images/zodiac.png") no-repeat;
+    background-size: 1100px;
+    background-position: center;
+}
+
+.charbox img {
+    width:45%;
+    height:100%;
+    color:#00c3ff69;
+    visibility:hidden;
+}
+.bttons{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 0;
+}
+.bttons div{
+    margin:auto;
+    height: 20px;
+    width: 100px;
+}
+#bt1{
+    border: 1px solid #00eeff;
+    color : #00eeff;
+}
+#bt3{
+    border: 1px solid #ffffff;
+    color : #ffffff;
+    opacity: 0.3;
+}
+#bt2{
+    border: 1px solid rgb(243, 0, 20);
+    color : rgb(243, 0, 20);
+}
+.secbattlefield #battle{
+    display:flex;
+    flex-direction: row;
+    height: 100vh;
+}
+#battle{
+    display: none;
+}
+.battlefield{
+    position: relative;
+	width: 92%;
+	margin: 0, auto;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+}
+.battlefield .charbox{
+    height: 33%;
+    width: 100%;
+    margin:0px;
+}
+.battlefield .charbox img{
+    visibility: visible;
+    width: 60px;
+}
+
+.atack-btn{
+    position: relative;
+	width: 99%;
+	height: 60px;
+	border: 2px solid #c8b33d;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	background-color: rgba(0,0,0,0.7);
+	background-image: url("http://file.saintseiya-gold.com/20150316/img/frame/button_deco.png");
+	background-position: right top;
+	background-size: 32px;
+	background-repeat: no-repeat;
+    outline:0;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.atack-btn:hover{
+    background-color: rgba(0, 17, 255, 0.7);
+}
+.atack-btn a {
+    display: block;
+	width: 100%;
+	height: 100%;
+}
+.atack-btn img {
+        height: 60px;
+        border-radius: 8px 0 0 8px;
+        float: left;
+        width: 60px;
+}
+.battlefield .atackbox{
+    width:100%;
+    display:block;
+    height:33%;
+    border: 1px solid #005d88;
+    background: url("./images/zodiac.png") no-repeat;
+    background-size: 1100px;
+    background-position: center;
+    margin:0px;
+}
+.battlefield .atackbox img{
+    width: 50%;
+    height: 100%;
+    visibility: visible;
+}
+.atack-btn span {
+    position:absolute;
+    top: 30%;
+    left: 70px;
+}
+.atack-btn .char-name {
+    position:absolute;
+    top: 10%;
+    left: 25%;
+    color: gold;
+}
+.atack-btn .attack-name {
+    color: #6e6e6e
+}
+
+progress::-webkit-progress-bar {background-color: #000!important; width: 100%!important;}
+progress::-webkit-progress-value {background-color: #aaa !important;}
+
+
+@media screen and (min-width: 767px) and (max-width: 960px) {
+
+	.char-btn {
+	width: 47.4%;
+	margin: 1%;
+	float: left;
+	}
+}
+@media screen and (min-width: 960px) {
+
+	/****** Character btn ******/
+
+	.char-btn {
+		width: 296px;
+		margin: 10px;
+		float: left;
+	}
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="title" content="PPOT"> 
+        <script src="./scripts.js"></script>
+        <link href="./style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <img id="titulo"src="./images/logo.png">
+        <audio id="atacksound"><source src="./mu.wav" type="audio/wav">fjfgj</audio>
+        <audio><source src="./start.wav" type="audio/wav">fjfgj</audio>
+        <audio><source src="./clicka.wav" type="audio/wav">fjfgj</audio>
+        <audio id="atacksound2"><source src="./mu.wav" type="audio/wav">fjfgj</audio>
+       <section class="charselect" id="characterSelect">
+        <div class="char-btn" id="1" ><span class="char-name">Mu de Aries</span><a><img class="protect" src="./images/characters/chara_on_aries.png"></a></div>
+        <div class="char-btn" id=2 ><span class="char-name">Aldebaran de Tauro</span><a><img class="protect" src="./images/characters/chara_on_taurus.png"></a></div>
+        <div class="char-btn" id=3><span class="char-name">Saga de Geminis</span><a><img class="protect" src="./images/characters/chara_on_gemini.png"></a></div>
+        <div class="char-btn" id="4"><span class="char-name">DeathMask de Cancer</span><a><img class="protect" src="./images/characters/chara_on_cancer.png"></a></div>
+        <div class="char-btn" id="5"><span class="char-name">Aioria de Leo</span><a><img class="protect" src="./images/characters/chara_on_leo.png"></a></div>
+        <div class="char-btn" id="6"><span class="char-name">Shaka de Virgo</span><a><img class="protect" src="./images/characters/chara_on_virgo.png"></a></div>
+        <div class="char-btn" id="7"><span class="char-name">Dokho de Libra</span><a><img class="protect" src="./images/characters/chara_on_libra.png"></a></div>
+        <div class="char-btn" id="8"><span class="char-name">Milo de Escorpio</span><a><img class="protect" src="./images/characters/chara_on_scorpius.png"></a></div>
+        <div class="char-btn" id="9"><span class="char-name">Aioros de Sagitario</span><a><img class="protect" src="./images/characters/chara_on_sagittarius.png"></a></div>
+        <div class="char-btn" id="10"><span class="char-name">Shura de Capricornio</span><a><img class="protect" src="./images/characters/chara_on_capriconus.png"></a></div>
+        <div class="char-btn" id="11"><span class="char-name">Camus de Acuario</span><a><img class="protect" src="./images/characters/chara_on_aquarius.png"></a></div>
+        <div class="char-btn" id="12"><span class="char-name">Afrodita de Piscis</span><a><img class="protect" src="./images/characters/chara_on_pisces.png"></a></div>
+       </section>
+        <section class="buttons"><div class="bttons"><div id="bt1">Player 1</div><div id="bt2">Player 2</div><div id="bt3">Play</div></section>
+         <section class="charselected">
+            <div class="charbox"><img id="cb1"></div>
+            <div class="charbox"><img id="cb2"></div>
+            <div" class="charbox"><img id="cb3"></div>
+         </section>
+
+
+
+         <section class="secbattlefield" id="battle">
+         <div class="battlefield" >
+            <div value="" class="charbox">
+            <div class="atack-btn" style="height:90px; margin-bottom: 5px;"><span class="char-name"></span><span stlye="left:120px!important" id="hp1"></span><progress id="p1" max="100" value="50" style="position: absolute; left: 80px; bottom: 30px;"></progress><a><img style="width:90px"  class="protect" id="saint1" ></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect"></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            </div>
+            <div value="" class="charbox" style="opacity: 0.5;">
+            <div class="atack-btn" style="height:90px; margin-bottom: 5px;"><span class="char-name" ></span><span stlye="left:120px!important" id="hp2"></span><progress id="p2" max="100" value="50" style="position: absolute; left: 80px; bottom: 30px;"></progress><a><img style="width:90px"  class="protect" id="saint2"></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect"></a></div>
+            </div>
+            <div value="" class="charbox" style="opacity: 0.5;">
+            <div class="atack-btn" style="height:90px; margin-bottom: 5px;"><span class="char-name" ></span><span stlye="left:120px!important" id="hp3"></span><progress id="p3" max="100" value="50" style="position: absolute; left: 80px; bottom: 30px;"></progress><a><img  style="width:90px"  class="protect" id="saint3"></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            </div>
+         </div>
+         <div class="battlefield">
+            <div class="atackbox"><img style="z-index:0" id="cb7"></div>
+            <div class="atackbox"><img id="cb8"></div>
+            <div class="atackbox"><img id="cb9"></div>
+        </div>
+        <div  class="battlefield">
+            <div class="atackbox"><img style="transform: scaleX(-1);" id="cb10"></div>
+            <div class="atackbox"><img style="transform: scaleX(-1);" id="cb11"></div>
+            <div class="atackbox"><img style="transform: scaleX(-1);" id="cb12"></div>
+        </div>
+        <div  class="battlefield" style="opacity: 0.5;">
+            <div class="charbox">
+            <div class="atack-btn" style="height:90px; margin-bottom: 5px;"><span class="char-name"></span><span stlye="left:120px!important" id="hp4"></span><progress id="p4" max="100" value="50" style="position: absolute; left: 80px; bottom: 30px;"></progress><a><img  style="width:90px"  class="protect" id="saint4" ></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            </div>
+            <div class="charbox">
+            <div class="atack-btn" style="height:90px; margin-bottom: 5px;"><span class="char-name"></span><span stlye="left:120px!important" id="hp5"></span><progress id="p5" max="100" value="50" style="position: absolute; left: 80px; bottom: 30px;"></progress><a><img  style="width:90px"  class="protect" id="saint5"></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            </div>
+            <div class="charbox">
+            <div class="atack-btn" style="height:90px; margin-bottom: 5px;"><span class="char-name"></span><span stlye="left:120px!important" id="hp6"></span><progress id="p6" max="100" value="50" style="position: absolute; left: 80px; bottom: 30px;"></progress><a><img  style="width:90px"  class="protect" id="saint6"></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            <div class="atack-btn"><span class="attack-name"></span><a><img class="protect" ></a></div>
+            </div>
+        </div>
+       </section>
+    </body>
+</html>
