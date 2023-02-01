@@ -124,7 +124,6 @@ window.onload = function(){
     }
     function selectSaint(e){
         var id = (e.target.parentElement.id);
-        if(e.path.length==6){id = e.target.id}
         var imagen = "images/characters/"+id+".png";
         
         if(spot1==false&&saints[id-1]==false){
